@@ -21,14 +21,14 @@ export type IPortfolioModel = IPortfolio & Document
 const portfolioSchema = new Schema<IPortfolio>(
 	{
 		title: { type: String, default: "Заголовок" },
-		photo: [
+		photos: [
 			{
-				ptoto1: { type: String, default: "" },
-				ptoto2: { type: String, default: "" },
-				ptoto3: { type: String, default: "" },
-				ptoto4: { type: String, default: "" },
-				ptoto5: { type: String, default: "" },
-				ptoto6: { type: String, default: "" },
+				photo1: { type: String, default: "" },
+				photo2: { type: String, default: "" },
+				photo3: { type: String, default: "" },
+				photo4: { type: String, default: "" },
+				photo5: { type: String, default: "" },
+				photo6: { type: String, default: "" },
 			},
 		],
 	},
