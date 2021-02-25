@@ -88,7 +88,7 @@ const createRoutes = (app: express.Express): void => {
 	 */
 	app.post(
 		"/api/forms",
-		passport.authenticate("jwt", { session: false }),
+		//passport.authenticate("jwt", { session: false }),
 		formsCtrl.create,
 	) //Добавление Форма обратной связи
 	app.get("/api/forms", formsCtrl.show) //Показать Форма обратной связи
@@ -99,7 +99,7 @@ const createRoutes = (app: express.Express): void => {
 	) //Редактировать Форма обратной связи
 	app.delete(
 		"/api/forms/:id",
-		passport.authenticate("jwt", { session: false }),
+		//passport.authenticate("jwt", { session: false }),
 		formsCtrl.delete,
 	) //Удалить Форма обратной связи
 
