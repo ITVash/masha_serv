@@ -1,8 +1,7 @@
 import mongoose from "mongoose"
 
-//mongodb+srv://admin:dtkjcbgtl2020@dontrc.4b9is.gcp.mongodb.net/itdcompany?retryWrites=true&w=majority
-const LINK: string =
-	process.env.LINK_DB || "mongodb://localhost:27017/itdcompany"
+//mongodb+srv://admin:dtkjcbgtl2020@dontrc.4b9is.gcp.mongodb.net/masha?retryWrites=true&w=majority
+const LINK: string = process.env.LINK_DB || "mongodb://localhost:27017/masha"
 mongoose.connect(LINK, {
 	useCreateIndex: true,
 	useNewUrlParser: true,
